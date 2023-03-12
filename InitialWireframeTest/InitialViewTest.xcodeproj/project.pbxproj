@@ -13,6 +13,11 @@
 		DBE275EC29BC53B90073A205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE275EB29BC53B90073A205 /* Preview Assets.xcassets */; };
 		DBE275EE29BC53B90073A205 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275ED29BC53B90073A205 /* Persistence.swift */; };
 		DBE275F129BC53B90073A205 /* InitialViewTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBE275EF29BC53B90073A205 /* InitialViewTest.xcdatamodeld */; };
+		DBE275FB29BD7E380073A205 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275FA29BD7E380073A205 /* UtilityExtensions.swift */; };
+		DBE275FE29BD8C160073A205 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275FD29BD8C160073A205 /* LogInView.swift */; };
+		DBE2760229BD93130073A205 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760129BD93130073A205 /* SignUpView.swift */; };
+		DBE2760529BD94F40073A205 /* TempUserInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760429BD94F40073A205 /* TempUserInfoStore.swift */; };
+		DBE2760729BD9BE40073A205 /* ViewChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760629BD9BE40073A205 /* ViewChooser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		DBE275EB29BC53B90073A205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE275ED29BC53B90073A205 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DBE275F029BC53B90073A205 /* InitialViewTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InitialViewTest.xcdatamodel; sourceTree = "<group>"; };
+		DBE275FA29BD7E380073A205 /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
+		DBE275FD29BD8C160073A205 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		DBE2760129BD93130073A205 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DBE2760429BD94F40073A205 /* TempUserInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempUserInfoStore.swift; sourceTree = "<group>"; };
+		DBE2760629BD9BE40073A205 /* ViewChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChooser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,13 @@
 		DBE275E329BC53B70073A205 /* InitialViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				DBE2760329BD94D70073A205 /* Model */,
 				DBE275E429BC53B70073A205 /* InitialViewTestApp.swift */,
-				DBE275E629BC53B70073A205 /* ContentView.swift */,
-				DBE275E829BC53B90073A205 /* Assets.xcassets */,
+				DBE275FC29BD8C030073A205 /* Views */,
+				DBE275F929BD7E270073A205 /* Utility */,
 				DBE275ED29BC53B90073A205 /* Persistence.swift */,
 				DBE275EF29BC53B90073A205 /* InitialViewTest.xcdatamodeld */,
+				DBE275E829BC53B90073A205 /* Assets.xcassets */,
 				DBE275EA29BC53B90073A205 /* Preview Content */,
 			);
 			path = InitialViewTest;
@@ -71,6 +83,33 @@
 				DBE275EB29BC53B90073A205 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBE275F929BD7E270073A205 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DBE275FA29BD7E380073A205 /* UtilityExtensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DBE275FC29BD8C030073A205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBE275E629BC53B70073A205 /* ContentView.swift */,
+				DBE275FD29BD8C160073A205 /* LogInView.swift */,
+				DBE2760129BD93130073A205 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBE2760329BD94D70073A205 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBE2760429BD94F40073A205 /* TempUserInfoStore.swift */,
+				DBE2760629BD9BE40073A205 /* ViewChooser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE2760529BD94F40073A205 /* TempUserInfoStore.swift in Sources */,
+				DBE275FE29BD8C160073A205 /* LogInView.swift in Sources */,
 				DBE275EE29BC53B90073A205 /* Persistence.swift in Sources */,
 				DBE275F129BC53B90073A205 /* InitialViewTest.xcdatamodeld in Sources */,
+				DBE2760729BD9BE40073A205 /* ViewChooser.swift in Sources */,
+				DBE2760229BD93130073A205 /* SignUpView.swift in Sources */,
 				DBE275E729BC53B70073A205 /* ContentView.swift in Sources */,
+				DBE275FB29BD7E380073A205 /* UtilityExtensions.swift in Sources */,
 				DBE275E529BC53B70073A205 /* InitialViewTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
