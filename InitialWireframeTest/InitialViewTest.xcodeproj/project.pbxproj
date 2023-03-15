@@ -18,6 +18,8 @@
 		DBE2760229BD93130073A205 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760129BD93130073A205 /* SignUpView.swift */; };
 		DBE2760529BD94F40073A205 /* TempUserInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760429BD94F40073A205 /* TempUserInfoStore.swift */; };
 		DBE2760729BD9BE40073A205 /* ViewChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760629BD9BE40073A205 /* ViewChooser.swift */; };
+		DBE2760929BEBB9D0073A205 /* MainHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760829BEBB9D0073A205 /* MainHome.swift */; };
+		DBE2760B29BEBDAA0073A205 /* BillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2760A29BEBDAA0073A205 /* BillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		DBE2760129BD93130073A205 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		DBE2760429BD94F40073A205 /* TempUserInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempUserInfoStore.swift; sourceTree = "<group>"; };
 		DBE2760629BD9BE40073A205 /* ViewChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChooser.swift; sourceTree = "<group>"; };
+		DBE2760829BEBB9D0073A205 /* MainHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHome.swift; sourceTree = "<group>"; };
+		DBE2760A29BEBDAA0073A205 /* BillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				DBE275E629BC53B70073A205 /* ContentView.swift */,
 				DBE275FD29BD8C160073A205 /* LogInView.swift */,
+				DBE2760A29BEBDAA0073A205 /* BillView.swift */,
+				DBE2760829BEBB9D0073A205 /* MainHome.swift */,
 				DBE2760129BD93130073A205 /* SignUpView.swift */,
 			);
 			path = Views;
@@ -188,9 +194,11 @@
 				DBE275F129BC53B90073A205 /* InitialViewTest.xcdatamodeld in Sources */,
 				DBE2760729BD9BE40073A205 /* ViewChooser.swift in Sources */,
 				DBE2760229BD93130073A205 /* SignUpView.swift in Sources */,
+				DBE2760B29BEBDAA0073A205 /* BillView.swift in Sources */,
 				DBE275E729BC53B70073A205 /* ContentView.swift in Sources */,
 				DBE275FB29BD7E380073A205 /* UtilityExtensions.swift in Sources */,
 				DBE275E529BC53B70073A205 /* InitialViewTestApp.swift in Sources */,
+				DBE2760929BEBB9D0073A205 /* MainHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

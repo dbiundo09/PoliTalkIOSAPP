@@ -73,7 +73,7 @@ struct LogInView: View {
     var createAccount : some View {
         Button("Sign up") {
             currentView = .SignUp
-        }
+        }.buttonStyle(.borderedProminent)
         
     }
     

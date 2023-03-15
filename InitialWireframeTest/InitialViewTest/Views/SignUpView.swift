@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State var stepper : Int = 0
+    @Binding var currentView : ViewChooser
+    @State var age : Int = 0
+    @State var name : String = ""
+    @State var zip : String = ""
+    @State var email : String = ""
     var body: some View {
         VStack {
             form
@@ -16,13 +20,25 @@ struct SignUpView: View {
     }
     
     var form : some View {
-        return NavigationView {
+        return NavigationStack {
             Form {
                 Section("Information") {
-                    Stepper("Age: \(stepper)", value: $stepper, in: 0...100, step: 1)
+                    TextField("Zip", text: $zip)
+                    TextField("Name", text: $name)
+                    TextField("Email", text: $email)
+                    Picker("Age", selection: $age) {
+                        ForEach(0 ..< 100) { number in
+                            Text("\(number)")
+                        }
+                    }
+                    
                 }
                 
             }
+            Button("Submit") {
+                currentView = ViewChooser.MainHome
+            }
+
         }
     }
     
@@ -55,8 +71,9 @@ struct SignUpView: View {
 
 
 
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
-}
+//struct SignUpView_Previews: PreviewProvider {
+//    @State var view : ViewChooser = .SignUp
+//    static var previews: some View {
+//        SignUpView(currentView: $view)
+//    }
+//}

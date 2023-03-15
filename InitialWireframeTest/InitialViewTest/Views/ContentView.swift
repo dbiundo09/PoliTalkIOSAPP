@@ -15,8 +15,14 @@ struct ContentView: View {
         if (currentView == .LogIn) {
             LogInView(currentView: $currentView)
         } else if (currentView == .SignUp) {
-            SignUpView()
-        } else {
+            SignUpView(currentView: $currentView)
+        } else if (currentView == .MainHome) {
+//            MainHome(currentView: $currentView)
+            MainHome()
+        } else if (currentView == .BillView) {
+            BillView(currentView: $currentView)
+        }
+        else {
             withAnimation {
                 Rectangle().onTapGesture {
                     currentView = .LogIn
