@@ -17,8 +17,7 @@ struct ContentView: View {
         } else if (currentView == .SignUp) {
             SignUpView(currentView: $currentView)
         } else if (currentView == .MainHome) {
-//            MainHome(currentView: $currentView)
-            MainHome()
+            MainHome(currentView: $currentView)
         } else if (currentView == .BillView) {
             BillView(currentView: $currentView)
         }

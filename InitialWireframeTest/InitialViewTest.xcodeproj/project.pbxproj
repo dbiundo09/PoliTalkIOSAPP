@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2274E129C17D9600DB5741 /* RepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2274E029C17D9600DB5741 /* RepView.swift */; };
 		DBE275E529BC53B70073A205 /* InitialViewTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275E429BC53B70073A205 /* InitialViewTestApp.swift */; };
 		DBE275E729BC53B70073A205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275E629BC53B70073A205 /* ContentView.swift */; };
 		DBE275E929BC53B90073A205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE275E829BC53B90073A205 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB2274E029C17D9600DB5741 /* RepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepView.swift; sourceTree = "<group>"; };
 		DBE275E129BC53B70073A205 /* InitialViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InitialViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE275E429BC53B70073A205 /* InitialViewTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewTestApp.swift; sourceTree = "<group>"; };
 		DBE275E629BC53B70073A205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE275E629BC53B70073A205 /* ContentView.swift */,
+				DB2274E029C17D9600DB5741 /* RepView.swift */,
 				DBE275FD29BD8C160073A205 /* LogInView.swift */,
 				DBE2760A29BEBDAA0073A205 /* BillView.swift */,
 				DBE2760829BEBB9D0073A205 /* MainHome.swift */,
@@ -190,6 +193,7 @@
 			files = (
 				DBE2760529BD94F40073A205 /* TempUserInfoStore.swift in Sources */,
 				DBE275FE29BD8C160073A205 /* LogInView.swift in Sources */,
+				DB2274E129C17D9600DB5741 /* RepView.swift in Sources */,
 				DBE275EE29BC53B90073A205 /* Persistence.swift in Sources */,
 				DBE275F129BC53B90073A205 /* InitialViewTest.xcdatamodeld in Sources */,
 				DBE2760729BD9BE40073A205 /* ViewChooser.swift in Sources */,
